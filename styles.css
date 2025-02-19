@@ -56,12 +56,23 @@ nav {
 /* Hero section */
 .hero {
 	height: 500px;
-	background-color: #666;
 	color: white;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	position: relative;
+}
+
+.hero .hero-background-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.8;
+	z-index: -1;
 }
 
 .hero-content {
@@ -131,6 +142,15 @@ nav {
 .card-image {
 	height: 200px;
 	background-color: #ddd;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+}
+
+.card-image img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
 }
 
 .card-content {
