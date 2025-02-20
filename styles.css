@@ -6,7 +6,8 @@
 }
 
 body {
-	font-family: sans-serif;
+	font-family: 'Lexend', sans-serif;
+	font-weight: 300;
 	color: #333;
 	line-height: 1.6;
 }
@@ -34,7 +35,7 @@ nav {
 }
 
 .logo {
-	font-weight: bold;
+	font-weight: 500;
 	font-size: 1.5rem;
 }
 
@@ -96,7 +97,7 @@ nav {
 	padding: 0.75rem 1.5rem;
 	border-radius: 50px;
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: 300;
 	cursor: pointer;
 	border: none;
 }
@@ -119,12 +120,14 @@ nav {
 	font-size: 2rem;
 	color: #2c5f2d;
 	margin-bottom: 0.5rem;
+	font-weight: 200;
 }
 
 /* Park cards */
 .park-cards {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	gap: 2rem;
 	width: 100%;
 }
@@ -220,6 +223,19 @@ nav {
 	background-color: #2c5f2d;
 	border-radius: 50%;
 	margin: 0 auto 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.activity-icon-placeholder i {
+	color: white;
+	font-size: 1.5rem;
+	transition: 0.3s ease;
+}
+
+.activity-icon-placeholder i:hover {
+	color: #708670;
 }
 
 /* Newsletter section */
@@ -321,6 +337,17 @@ footer {
 	height: 30px;
 	background-color: #666;
 	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-icon:hover {
+	cursor: pointer;
+}
+
+.social-icon i {
+	color: white;
 }
 
 .footer-bottom {
@@ -336,6 +363,10 @@ footer {
 	color: #aaa;
 	text-decoration: none;
 	margin: 0 0.5rem;
+}
+
+.footer-copyright {
+	font-family: 'Sree Krushnadevaraya', serif;
 }
 
 /* Media Queries */
